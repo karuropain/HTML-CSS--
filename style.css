@@ -1,8 +1,8 @@
 /* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -11,7 +11,7 @@ header {
 }
 
 main {
-  width: 960px;
+  width: 960PX;
   margin: 50px auto;
   display: flex;
 }
@@ -66,3 +66,16 @@ footer {
   height: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .step-box{
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+
+}
